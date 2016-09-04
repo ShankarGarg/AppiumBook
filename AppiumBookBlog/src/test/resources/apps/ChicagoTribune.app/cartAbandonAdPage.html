@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style = "width: 100%; height: 100%; background-color: #F1F1F1;">
+    <head>
+        <style>
+            body {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            div {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        </style>
+    </head>
+    <body style = "text-align: center; width: 100%; height: 100%;">
+        <div id="activityContainer"></div>
+        <script type='text/javascript' src="http://static.truex.com/js/client.js"></script>
+        <script type='text/javascript'>
+            function openActivityFromWsAPI(activity, wd, ht, userId, configHash){
+                var objActivity = JSON.parse(activity);
+                objActivity.window_width = parseInt(wd);
+                objActivity.window_height = parseInt(ht);
+                var options = {'network_user_id': userId, 'partner_config_hash': configHash};
+                truex.client(options, function(client){
+                             client.prepareActivity(objActivity);
+                             objActivity.onStart(function(objActivity){window.location  = "truex:activity:onStart:"   + objActivity.id;});
+                             objActivity.onClose(function(objActivity){window.location  = "truex:activity:onClose:"   + objActivity.id;});
+                             objActivity.onFinish(function(objActivity){window.location = "truex:activity:onFinish:"  + objActivity.id;});
+                             objActivity.onCredit(function(engagement){window.location  = "truex:engagement:onCredit:"+ engagement.signature;});
+                             client.loadActivityIntoContainer(objActivity, document.getElementById("activityContainer")); //need to pass in the objActivity
+                             });
+            }
+        </script>
+    </body>
+</html>

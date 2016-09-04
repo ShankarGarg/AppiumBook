@@ -1,0 +1,121 @@
+{
+    "pv_id":"1111111111111111111111",
+    "pv_time":1397679971914,
+    "epls":[
+            "2",
+            "3"
+            ],
+    "data":[
+            {
+            "placement_id":"2",
+            "creative_format_id":11,
+            "column_count":1,
+            "configs": {
+            "header_copy": "You may like",
+            "t_pos": "-1"
+            },
+            "css":"",
+            "ads":[
+                   {
+                   "ad_id":860737279592762370,
+                   "cr_id":"860737279592762370",
+                   "adv_id":"556276228732176385",
+                   "configurables":{
+                   "icon":"http://static.yieldmo.com/assets/wrapper-tile-big.png",
+                   "phone_image":"http://static.yieldmo.com/assets/jw_wrapper_phone_small.jpg",
+                   "tablet_image":"http://static.yieldmo.com/assets/jw_wrapper_tablet.jpg",
+                   "header_offset":50,
+                   "pattern_image":"http://static.yieldmo.com/assets/wrapper-tile-mid.png",
+                   "pattern_color":"rgb(18, 19, 20)"
+                   },
+                   "actions":{
+                   "primary":{
+                   "type":"action_url",
+                   "tracker_url":"http://yieldmo.com"
+                   }
+                   }
+                   }
+                   ]
+            },
+            {
+            "placement_id":"3",
+            "creative_format_id":11,
+            "column_count":1,
+            "configs": {
+            "header_copy": "You may like",
+            "t_pos": "0"
+            },
+            "ads":[
+                   {
+                   "ad_id":860741970108091441,
+                   "cr_id":"860741970108091441",
+                   "adv_id":"556276228732176385",
+                   "configurables":{
+                   "icon":"http://static.yieldmo.com/assets/wrapper-header.png",
+                   "phone_image":"http://static.yieldmo.com/assets/jw_wrapper_phone_small.jpg",
+                   "tablet_image":"http://static.yieldmo.com/assets/jw_wrapper_tablet.jpg",
+                   "infinite":"ice wed cream",
+                   "footer_stay":480,
+                   "footer_show":300,
+                   "pattern_image":"http://static.yieldmo.com/assets/wrapper-tile-mid.png",
+                   "pattern_color":"rgb(18, 19, 20)"
+                   },
+                   "actions":{
+                   "primary":{
+                   "type":"action_url",
+                   "tracker_url":"http://yieldmo.com"
+                   }
+                   }
+                   }
+                   ]
+            },
+            {
+            "tag":1,
+            "placement_id":"1123690050557950610",
+            "layout_data_url":"http://static.stg.yieldmo.com/sdk/template/iOS/format14_1ad.nib",
+            "creative_format_id":14,
+            "column_count":1,
+            "ads":[
+                   {
+                   "tag":1000,
+                   "cr_id":"1123692652586711718",
+                   "adv_id":"515837857920392368",
+                   "labels":[
+                   
+                   ],
+                   "customizations":[
+                   
+                   ],
+                   "buttons":[
+                              {
+                              "tag":1000
+                              },
+                              {
+                              "tag":1001
+                              }
+                              ],
+                   "configurables":{
+                   "link_type":"website",
+                   "pixel_url":"http://api.placed.com/api/v2/sync/impression?partner=yieldmo&version=1.0&payload_campaign_identifier=yieldmotest&payload_device_identifier=A8843215-F496-4127-8D52-2F8DD49D5869&payload_type=impression",
+                   "image":"http://static.yieldmo.com/icons/80/1123692652586711718/1185320040483109139.jpg",
+                   "frames":20,
+                   "inverse":true,
+                   "workArea":0.95
+                   },
+                   "tpi":[
+                          {
+                          "sort_id":"pixel_url",
+                          "url":"http://api.placed.com/api/v2/sync/impression?partner=yieldmo&version=1.0&payload_campaign_identifier=yieldmotest&payload_device_identifier=A8843215-F496-4127-8D52-2F8DD49D5869&payload_type=impression"
+                          }
+                          ],
+                   "actions":{
+                   "primary":{
+                   "type":"action_url",
+                   "tracker_url":"http://ads.stg.yieldmo.com/v000/t_tkr/clk?p=rO0ABXNyACJjb20ueWllbGRtby5jb21tb24uRW5jcnlwdEVudmVsb3BlzCwpm2pbEEICAAFMAA1lbmNyeXB0ZWREYXRhdAAbTGphdmF4L2NyeXB0by9TZWFsZWRPYmplY3Q7eHBzcgAZamF2YXguY3J5cHRvLlNlYWxlZE9iamVjdD42PabDt1RwAgAEWwANZW5jb2RlZFBhcmFtc3QAAltCWwAQZW5jcnlwdGVkQ29udGVudHEAfgAETAAJcGFyYW1zQWxndAASTGphdmEvbGFuZy9TdHJpbmc7TAAHc2VhbEFsZ3EAfgAFeHBwdXIAAltCrPMX-AYIVOACAAB4cAAAAjiduqXDhGy3tptQeQq6S7ukSo7SXbO1wB8VjJWALHzZfZ7k6EiZvqhOlyY5MG0yxxB148LCzWQF3JkdeytM8-E2xSU7GKtPQuV5_TF_CuOJkZYwM4mXRqW9uDvUs88wWWhv8l7vBhPZwzAy8b3aKFDMJjW7p3T8PcobM7951XLfN9--rGq2CKwaaJ9kJQjYF41wLRXOXrD6pXOyQXw_kXG_J1mKCZ_1bfCo9hD77LkroHWDVrFhNwwfJhUfyMaDvER6LnpKps8wsw7XrqQsu3qLDRCQ5mDLyP4rrfU4DMgXfML_MnY4aRgmyBMIouml46AFlXiAJdTIZUXK4WlLY9nMQ1os2i4v2JkWyiS8RBs3uUcl3IE6GOTva_5jSKAGM_Z6xRFIJRdevhDobWWcYWsncRjL9Q5oK4c-_09kjFoWfhWMlYAsfNl9nuToSJm-qE7RnuLnyaBFkh7dTcFn9ytpXwq1zpGSzRGse25mCtpNt98XY-hJAJRU9V0nwVHpYw4ZmcQjgk4_03yozzR0z9NWENkPdxINW5PoVazeTDhMAe7RgW5TU0jVa6pSREumM7dXAC8UTQ9o63bJHvDSes5q-W6o8W6c3S5L-ZwklsBu15EBr_Hm9J7a37RYWdu54ZUkv5WxVjihvQAwHUs924kHh_9-m7MTAyMGjycn7sJJJIa3fTm3B9QlgzNL0VgsVq1T3YgICaKbR-h-Z-vC_hjfa5bcUVcszZ37_LE0EaxAIEovZ5DG9XPWcHQACEJsb3dmaXNo"
+                   }
+                   }
+                   }
+                   ]
+            }
+            ]
+}

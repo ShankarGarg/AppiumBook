@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>AppiumRecipeBook</groupId>
+  <artifactId>AppiumBookBlog</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>AppiumBookBlog</name>
+  <description>AppiumBookBlog</description>
+  
+   <properties>
+		<appium.version>3.3.0</appium.version>
+		<testng.version>6.9.10</testng.version>
+		<selenium.version>2.47.1</selenium.version>
+	</properties>
+	
+	<dependencies>
+		
+		<!--  Appium -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>${appium.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+	
+</project>

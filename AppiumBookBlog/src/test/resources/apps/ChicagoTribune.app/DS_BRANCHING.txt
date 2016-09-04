@@ -1,0 +1,40 @@
+
+Branching TRBDeviceServices (working with svn:externals)
+
+1. View the current svn:externals settings for the project
+
+tt-tec-w8018mdeagu:ds_iphone alamantia$ svn propget svn:externals .
+TRBDeviceServices https://svn.tribco.trb/svn/tribtech/projects/mobile_apps/TRBDeviceServices/trunk/
+
+The above command shows you that the local TRBDeviceServices directory is loaded from the subversion 
+repo at https://svn.tribco.trb/svn/tribtech/projects/mobile_apps/TRBDeviceServices/trunk/
+
+2. Branch TRBDeviceServices 
+
+tt-tec-w8018mdeagu:ds_iphone alamantia$svn copy https://svn.tribco.trb/svn/tribtech/projects/mobile_apps/TRBDeviceServices/trunk/ https://svn.tribco.trb/svn/tribtech/projects/mobile_apps/TRBDeviceServices/branches/test_branch -m "Creating test branch"
+
+Committed revision 278557.
+
+You now have branched TRBDeviceServices to  
+https://svn.tribco.trb/svn/tribtech/projects/mobile_apps/TRBDeviceServices/branches/test_branch 
+
+
+3. Changing the properties
+
+create a new file props.txt which states you want to link TRBDeviceServices to the new repo
+the file should look like the below
+
+tt-tec-w8018mdeagu:ds_iphone alamantia$ cat props.txt 
+TRBDeviceServices https://svn.tribco.trb/svn/tribtech/projects/mobile_apps/TRBDeviceServices/branches/test_branch
+ 
+then set the externals and commit + update 
+
+tt-tec-w8018mdeagu:ds_iphone alamantia$ svn propset svn:externals . -F props.txt 
+property 'svn:externals' set on '.'
+tt-tec-w8018mdeagu:ds_iphone alamantia$ 
+
+
+
+that's it!
+
+

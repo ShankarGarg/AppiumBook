@@ -1,0 +1,26 @@
+{
+    "version" : "1.0",
+    "analytics" : {
+        "rsids" : "tribnglobal",
+        "server" : "m.trb.com",
+        "charset" : "UTF-8",
+        "ssl" : false,
+		"offlineEnabled" : false,
+        "lifecycleTimeout" : 300,
+		"referrerTimeout" : 0,
+        "batchLimit" : 0,
+        "privacyDefault" : "optedin",
+		"poi" : []
+    },
+	"target" : {
+		"clientCode" : "",
+		"timeout" : 5
+	},
+	"audienceManager" : {
+		"server" : ""
+	},
+	"acquisition" : {
+		"server" : "c00.adobe.com",
+		"appid" : "3d34e750087987eccabf956e2fe7814945ff8a2478d70aeb7508b332acfc197c"
+	}
+}
