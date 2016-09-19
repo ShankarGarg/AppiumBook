@@ -34,8 +34,12 @@ public class AppiumSampleTestCaseAndroid {
 	final File app = new File(appDir, "ApiDemos-debug.apk");
 	caps.setCapability("app", app.getAbsolutePath());
 
-	// initializing driver object
+	// initializing driver object - appium Server
 	driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+	
+	//Ch.6-R.1
+	//initializing driver object - Grid Node
+	//driver = new AndroidDriver(new URL("http://192.168.56.1:4444/wd/hub"), caps);
 	
 	//initializing  waits
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

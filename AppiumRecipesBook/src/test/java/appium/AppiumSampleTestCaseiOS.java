@@ -16,6 +16,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -39,8 +40,12 @@ public class AppiumSampleTestCaseiOS {
 	final File app = new File(appDir, "TestApp.app");
 	caps.setCapability("app", app.getAbsolutePath());
 
-	// initializing driver object
+	// initializing driver object - Local
 	driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+	
+	//Ch.6-R.2
+	// initializing driver object - Grid Node
+	//driver =  new IOSDriver<WebElement>(new URL("http://192.168.56.1:4444/wd/hub"), caps);
 
 	// initializing waits
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

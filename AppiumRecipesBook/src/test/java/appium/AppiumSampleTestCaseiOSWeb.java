@@ -1,6 +1,7 @@
 package appium;
 
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
 import java.net.MalformedURLException;
@@ -24,12 +25,16 @@ public class AppiumSampleTestCaseiOSWeb {
 	// setting capabilities
 	DesiredCapabilities caps = new DesiredCapabilities();
 	caps.setCapability("platform", "iOS");
-	caps.setCapability("platformVersion", "9.0");
+	caps.setCapability("platformVersion", "9.2");
 	caps.setCapability("deviceName", "iPhone 6");
 	caps.setCapability("browserName", "safari");
 
-	// initializing driver object
+	// initializing driver object - Local
 	driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+	
+	//Ch.6-R.2
+	// initializing driver object - Grid Node
+	//driver = new IOSDriver(new URL("http://192.168.56.1:4444/wd/hub"), caps);
 
 	// initializing waits
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

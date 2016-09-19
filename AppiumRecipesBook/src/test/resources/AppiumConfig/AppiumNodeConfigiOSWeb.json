@@ -1,0 +1,31 @@
+{
+    "capabilities": [
+                     {
+       "maxInstances": 1,
+       "browserName": "safari",
+       "version": "9.2",
+       "orientation": "LANDSCAPE",
+       "platformName": "iOS",
+       "platform": "MAC",
+       "safariIgnoreFraudWarning": "true",
+       "newCommandTimeout":999
+                     }
+                     ],
+    "configuration":
+    {
+        "cleanUpCycle": 2000,
+        "timeout": 300000,
+        "browserTimeout": 60000,
+		"hub": "http://192.168.56.1:4444/grid/register",
+    	"url":"http://127.0.0.1:4723/wd/hub",
+    	"host": "127.0.0.1",
+    	"port": 4723,
+    	"maxSession": 1,
+    	"register": true,
+    	"registerCycle": 5000,
+    	"hubPort": 4444,
+    	"hubHost": "192.168.56.1",
+        "role": "node",
+        "throwOnCapabilityNotPresent":"false"
+    }
+}

@@ -43,17 +43,6 @@ public class AppiumSampleTestCaseiOSRD {
 	wait = new WebDriverWait(driver, 10);
 
 	// Test Steps
-	// //enter data in first text box
-	// wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("TextField1")));
-	// driver.findElement(MobileBy.AccessibilityId("TextField1")).sendKeys("AppiumBook");
-	//
-	// //enter data in second text box
-	// wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("TextField2")));
-	// driver.findElement(MobileBy.AccessibilityId("TextField2")).sendKeys("First TC");
-
-	// enter data in first text box
-	// UIAApplication[1]/UIAWindow[2]/UIATextField[1]
-
 	wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.IosUIAutomation(".textFields()[0]")));
 	driver.findElement(MobileBy.IosUIAutomation(".textFields()[0]")).sendKeys("1");
 
@@ -65,7 +54,6 @@ public class AppiumSampleTestCaseiOSRD {
 
 	System.out.println(driver.findElement(MobileBy.IosUIAutomation(".staticTexts().firstWithPredicate(\"name=='Answer'\")")).getText());
 	
-	//driver.findElement(MobileBy.AndroidUIAutomator(uiautomatorText));
 	// close driver
 	driver.quit();
 
