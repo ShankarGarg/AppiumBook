@@ -55,6 +55,7 @@ public class AppiumSampleTestCaseiOSHybrid {
 	    for (final String contextName : contextNames) {
 	      System.out.println(contextName);
 	      if (contextName.contains("WEB")) {
+		//switch to context containing web its name
 	         ((AppiumDriver) driver).context(contextName);
 	         System.out.println("context switched to webview");
 	      }

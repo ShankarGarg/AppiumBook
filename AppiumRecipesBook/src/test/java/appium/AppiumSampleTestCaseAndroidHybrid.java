@@ -57,9 +57,10 @@ public class AppiumSampleTestCaseAndroidHybrid {
 	    
 	    //print Context name
 	    System.out.println(context);
-	    //switch to context containing web its name
-	    if (context.toString().contains("WEB")) {
-		driver.context(context).toString();
+	    
+	    if (context.contains("WEB")) {
+		//switch to context containing web its name
+		driver.context(context);
 	    }
 	}
 
