@@ -15,8 +15,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AppiumBase {
 
-    public static WebDriver driver = null;
-    public static WebDriverWait waitVar = null;
+    public static WebDriver driver;
+    public static WebDriverWait waitVar;
 
     public void createDriver() throws MalformedURLException, InterruptedException {
 

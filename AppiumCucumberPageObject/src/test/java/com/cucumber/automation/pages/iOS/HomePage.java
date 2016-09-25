@@ -1,7 +1,6 @@
 package com.cucumber.automation.pages.iOS;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
+
 import io.appium.java_client.MobileBy;
 
 import org.openqa.selenium.By;
@@ -20,9 +19,9 @@ public class HomePage extends AppiumBase{
  
     
     // All the behavior of home page will be defined here in functions
-    public void verifyHomePage(){
+    public boolean isHomePage(){
         waitVar.until(ExpectedConditions.presenceOfElementLocated(computeSum));
-        assertTrue(driver.findElement(computeSum).isDisplayed());
+        return driver.findElement(computeSum).isDisplayed();
     }
     
     public void typeTextField1(String text){
@@ -40,8 +39,8 @@ public class HomePage extends AppiumBase{
          driver.findElement(computeSum).click();
     }
     
-    public void verifyResult(String text){
+    public String returnResult(){
          waitVar.until(ExpectedConditions.presenceOfElementLocated(result));
-         assertEquals(text,driver.findElement(result).getText());
+         return driver.findElement(result).getText();
     }
 }

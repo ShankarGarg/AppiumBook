@@ -1,4 +1,4 @@
-package com.cucumber.automation.stepDefinition;
+package com.cucumber.automation.stepdefinition;
 
 import java.net.MalformedURLException;
 
