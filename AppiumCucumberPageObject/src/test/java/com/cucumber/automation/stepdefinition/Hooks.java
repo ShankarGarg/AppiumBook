@@ -9,16 +9,16 @@ import cucumber.api.java.Before;
 
 public class Hooks {
     
-    AppiumBase ab = new AppiumBase();
+    AppiumBase appiumBase = new AppiumBase();
     
     @Before
     public void beforeHookfunction() throws MalformedURLException, InterruptedException{
-        ab.createDriver();
+	appiumBase.createDriver();
     }
  
     @After
     public void afterHookfunction() {
-        ab.teardown();
+	appiumBase.teardown();
     }
 
 }

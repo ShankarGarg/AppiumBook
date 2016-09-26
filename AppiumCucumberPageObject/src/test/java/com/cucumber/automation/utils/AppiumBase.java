@@ -1,6 +1,5 @@
 package com.cucumber.automation.utils;
 
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
 import java.io.File;
@@ -9,7 +8,6 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -19,8 +17,6 @@ public class AppiumBase {
     public static WebDriverWait waitVar;
 
     public void createDriver() throws MalformedURLException, InterruptedException {
-
-	System.out.println("1");
 
 	// setting capabilities
 	DesiredCapabilities caps = new DesiredCapabilities();
@@ -40,7 +36,6 @@ public class AppiumBase {
 	// initializing waits
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	waitVar = new WebDriverWait(driver, 10);
-	System.out.println("2");
     }
 
     public void teardown() {
